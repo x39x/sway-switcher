@@ -44,7 +44,7 @@ jobs:
           mkdir -p dist
 
           cp \
-            target/${{ matrix.target }}/release/sway-prev \
+            target/${{ matrix.target }}/release/sway-switcher \
             dist/${{ matrix.artifact }}
 
           chmod +x dist/${{ matrix.artifact }}
