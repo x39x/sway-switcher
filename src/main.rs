@@ -46,7 +46,7 @@ fn main() -> Res<()> {
                     push_history(&mut history, ev.container.id);
                 }
 
-                // 窗口关闭时顺手清理一下历史
+                // clean history
                 WindowChange::Close => {
                     history.retain(|x| *x != ev.container.id);
                 }
